@@ -1,0 +1,281 @@
+/* ----Global-----------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap");
+
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    color: rgb(64, 20, 64);
+}
+
+main {
+    margin-bottom: 7em ;
+   
+
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+
+nav li {
+    display: inline-block;
+    font-size: 1.06em;
+    padding: 0.4em;
+    transition: transform .2s;
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+nav li:hover,
+.buttons:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.container {
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+  
+}
+
+.container button {
+    margin: 0 auto;
+    width: 40%;
+    float: right;
+    height: 3em;
+    margin-bottom: 3em;
+}
+
+input {
+    border: none;
+}
+
+.buttons, #db {
+    padding: 12px;
+    align-items: center;
+    border: none;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    transition: transform .2s;
+    background-color: #d8cef6;
+    border-radius: 10px;
+}
+
+#db {
+    text-align: center;
+    margin-left: 47%;   
+   
+
+}
+
+.buttons:active {
+    box-shadow: none;
+}
+
+.flex-buttons {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#submit-button {
+    width: 72%;
+    border-radius: 10px 0 0 10px;
+    background-color: #d8cef6;
+}
+
+#reset-button {
+    background-color: #F3BCC8;
+    width: 25%;
+    border-radius: 0 10px 10px 0;
+}
+
+sup {
+    color: #eba9b7;
+    font-weight: bolder;
+    font-size: 3em;
+
+}
+
+p b {
+    color: #efb4c1;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px rgba(243, 188, 200, 0);
+    font-size: 1.28em;
+}
+
+footer {
+    background-color: #d8cef6;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    border-top: thin dotted;
+    font-size: 14px;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 5em;
+    padding: 8px;
+    box-shadow: 0 0 10px black;
+    text-align: right;
+    color: #0D6EFD;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+a {
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+#reg-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 5em;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5e5f1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    accent-color: #e9b9dd;
+}
+
+
+input:focus-visible,
+input[type=checkbox]:focus-visible {
+    outline: 2px solid #e9b9dd;
+}
+
+/* ------------Table ------------------- */
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    border: 1px solid #e9b9dd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 7em;
+
+}
+
+thead, th {
+    border: 1px solid #e9b9dd;
+    background-color: #e9b9dd;
+}
+
+td,
+th {
+    border: 2px dotted #e9b9dd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f5e5f1;
+}
+
+
+/* ---------- Media queries| Responsiveness-------------- */
+
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding-bottom: 2px;
+    }
+
+
+    nav li {
+        font-size: 1.05em;
+        padding: 0.7em 0.4em;
+
+    }
+
+    #reg-form {
+        width: 80%;
+        margin: auto;
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 0px;
+    }
+
+
+    nav li {
+        font-size: 1.05em;
+        padding: 0.4em;
+
+    }
+
+
+    #reg-form {
+        width: 90%;
+        padding: 1.5em;
+        margin: auto;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+
+    .buttons {
+        padding: 11px;
+        border-radius: 15px;
+        height: 4.5em;
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+    /* main {
+        margin: 170px 10px 100px 10px;
+    } */
+
+}
